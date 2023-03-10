@@ -2,8 +2,8 @@ import styled, { keyframes } from 'styled-components'
 
 export const Div = styled.div`
      margin: 0 auto;
-    height: 900px;
-    width: 1400px;
+     height: 900px;
+     width: 1400px;
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;

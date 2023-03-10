@@ -6,5 +6,5 @@ export const Div = styled.div`
     width: 1400px;
     display: flex;
     border: 5px solid black;
-    background-color: pink;
+    background-color: lime;
 `

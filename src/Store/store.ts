@@ -1,9 +1,11 @@
 import { legacy_createStore, combineReducers } from "redux";
+import { soundsReducer } from "./soundsReducer";
 import { windowsReducer } from "./windowsReducer";
 
 
 let reducers = combineReducers({
     windows: windowsReducer,
+    sounds: soundsReducer,
 })
 
 let store = legacy_createStore(reducers)
