@@ -1,4 +1,6 @@
 import { useDispatch } from "react-redux/es/exports";
+import { setIsInitialWindow } from "../../../actionCreators/setIsInitialWindow";
+import { setIsMenuWindow } from "../../../actionCreators/setIsMenuWindow";
 import { Div, Logo, Prompt } from "./InitialWindow-styles"
 
 
@@ -7,7 +9,8 @@ export const InitialWindow = () => {
     const dispatch = useDispatch()
 
     const onInitialWindowClick = () => {
-        dispatch({ type: 'SET_IS_INITIAL_WINDOW', payload: { status: false } })
+        dispatch(setIsInitialWindow(false))
+        dispatch(setIsMenuWindow(true))
     }
 
     return (
