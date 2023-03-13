@@ -7,6 +7,8 @@ import { RootState } from "../../../store/store"
 import { useDispatch, useSelector } from "react-redux"
 import { setMusicVolume } from "../../../actionCreators/setMusicVolume"
 import { setEffectsVolume } from "../../../actionCreators/setEffectsVolume"
+import { setIsGameWindow } from "../../../actionCreators/setIsGameWindow"
+import { setIsMenuWindow } from "../../../actionCreators/setIsMenuWindow"
 
 
 export const MenuWindow = () => {
@@ -21,6 +23,10 @@ export const MenuWindow = () => {
     const onEffectsVolumeChange = (e: any) => {
         dispatch(setEffectsVolume(e.target.value))
     }
+    const onStartButtonClick = () => {
+        dispatch(setIsMenuWindow(false))
+        dispatch(setIsGameWindow(true))
+    }
 
 
     const audio = React.useRef<HTMLAudioElement>(null)
@@ -34,7 +40,7 @@ export const MenuWindow = () => {
     return (
         <Div>
             <Logo />
-            <StartButton>старт</StartButton>
+            <StartButton onClick={onStartButtonClick}>старт</StartButton>
             <InfoButton>об игре</InfoButton>
 
             <P>громкость музыки</P>
