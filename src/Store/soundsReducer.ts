@@ -2,7 +2,7 @@ import { SET_EFFECTS_VOLUME, SET_MUSIC_VOLUME } from "../data/actionTypes";
 
 
 const startState = {
-    musicVolume: 100,
+    musicVolume: 10,
     effectsVolume: 100,
 }
 

@@ -11,7 +11,7 @@ const appearance = keyframes`
 
 export const Div = styled.div`
     height: 900px;
-    width: 1400px;
+    width: 1500px;
     animation: 1s ${appearance} ease-out;
     display: flex;
     flex-direction: column;

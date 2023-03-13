@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Div = styled.div`
     height: 260px;
-    width: 1400px;
+    width: 1500px;
 `
 
 export const Title = styled.p`
